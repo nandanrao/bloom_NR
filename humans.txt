@@ -1,0 +1,22 @@
+www.discoverbloom.com
+
+/* Company */
+
+Company: GumCo
+Site: www.gumco.com
+
+/* Team */
+
+Lead Developer: Pete Rugh 
+Twitter: peterugh
+Location: Salt Lake City, UT, USA
+
+Creative Director: Phil Smallwood
+Location: Salt Lake City, UT, USA
+		
+/* Site */
+
+Last update: 2014/06/02
+Standards: HTML5, CSS3, Javascript
+Components: GSAP, jQuery
+Software: Sublime Text 2, Adobe Photoshop

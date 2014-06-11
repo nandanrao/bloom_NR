@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* IE Only stuff. */
+
+#request_demo label {
+	position: static;
+	left:auto;
+}

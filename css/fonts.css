@@ -1,0 +1,98 @@
+/*
+	This font software is the property of Commercial Type.
+
+	You may not modify the font software, use it on another website, or install it on a computer.
+
+	License information is available at http://commercialtype.com/eula
+	For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+	Copyright (C) 2013 Schwartzco Inc.
+	License: 1405-ZNGDEX     
+*/
+
+
+@font-face {
+	font-family: 'Graphik Web';
+	src: url('../fonts/Graphik-Light-Web.eot');
+	src: url('../fonts/Graphik-Light-Web.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Graphik-Light-Web.woff') format('woff'),
+		 url('../fonts/Graphik-Light-Web.ttf') format('truetype'),
+		 url('../fonts/Graphik-Light-Web.svg#Graphik Web') format('svg');
+	font-weight:  300;
+	font-style:   normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Graphik Web';
+	src: url('../fonts/Graphik-Regular-Web.eot');
+	src: url('../fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Graphik-Regular-Web.woff') format('woff'),
+		 url('../fonts/Graphik-Regular-Web.ttf') format('truetype'),
+		 url('../fonts/Graphik-Regular-Web.svg#Graphik Web') format('svg');
+	font-weight:  400;
+	font-style:   normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Graphik Web';
+	src: url('../fonts/Graphik-RegularItalic-Web.eot');
+	src: url('../fonts/Graphik-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Graphik-RegularItalic-Web.woff') format('woff'),
+		 url('../fonts/Graphik-RegularItalic-Web.ttf') format('truetype'),
+		 url('../fonts/Graphik-RegularItalic-Web.svg#Graphik Web') format('svg');
+	font-weight:  400;
+	font-style:   italic;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Graphik Web';
+	src: url('../fonts/Graphik-Medium-Web.eot');
+	src: url('../fonts/Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Graphik-Medium-Web.woff') format('woff'),
+		 url('../fonts/Graphik-Medium-Web.ttf') format('truetype'),
+		 url('../fonts/Graphik-Medium-Web.svg#Graphik Web') format('svg');
+	font-weight:  500;
+	font-style:   normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Graphik Web';
+	src: url('../fonts/Graphik-Semibold-Web.eot');
+	src: url('../fonts/Graphik-Semibold-Web.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Graphik-Semibold-Web.woff') format('woff'),
+		 url('../fonts/Graphik-Semibold-Web.ttf') format('truetype'),
+		 url('../fonts/Graphik-Semibold-Web.svg#Graphik Web') format('svg');
+	font-weight:  600;
+	font-style:   normal;
+	font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?71593262');
+  src: url('../fonts/fontello.eot?71593262#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff?71593262') format('woff'),
+       url('../fonts/fontello.ttf?71593262') format('truetype'),
+       url('../fonts/fontello.svg?71593262#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+}
+ 
+.icon-cancel:before { content: '\e800'; } /* '' */

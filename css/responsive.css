@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/*Mobile Phones*/
+@media (max-width: 767px) {
+    body {
+        font-size: .7em;
+    }
+    header > nav > ul > li > a:link {
+        font-size: 13px;
+        padding: 10px 10px;
+    }
+    article, #request_demo {
+        height: auto;
+        min-height: 40em;
+    }
+    article > div {
+		width: 100%;
+        margin: 4em 0;
+	}
+    article p,
+    #request_demo p {
+        width: 90% !important;
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    #opening {
+        padding: inherit 10px;
+    }
+    h1 {
+        font-size: 2.75em;
+    }
+    article h2,
+    #request_demo #success h2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #tour ul {
+		width: 100%;
+		margin: 0 auto;
+	}
+    #tour li {
+			width: 90%;
+            margin-left: 5%;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            padding: 0;
+			padding-top: 70px;
+            background: no-repeat center top transparent url(../images/icon-video-calling.png);
+    }
+    #tour li + li {
+            background: no-repeat center top transparent url(../images/icon-education.png);
+    }
+    #tour li + li + li {
+            background: no-repeat center top transparent url(../images/icon-connected.png);
+    }
+    #tour > div > a {
+		margin: 60px 0;
+	}
+    form button {
+        margin-top: 2em;
+    }
+    #request_demo input,
+    #request_demo textarea {
+        width: 90%;
+    }
+    #request_demo textarea {
+        height:120px;
+    }
+    #demo_trigger { 
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    
+}
+/* Tablets */
+@media (min-width: 768px) and (max-width: 979px) { 
+    #tour ul {
+        width: 95%;
+		margin: 0 auto;
+	}
+}
+
+/* Standard Desktops */
+@media (min-width: 980px) and (max-width: 1199px) { 
+}
+
+/* Widescreen Desktops */
+@media (min-width: 1200px) {
+    article {
+        height: 45em;
+    }
+}
