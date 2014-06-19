@@ -276,7 +276,7 @@ h1 {
     line-height: 29px;
 }
     #request_demo input.invalid {
-        background: rgba(186,56,35,0.4);
+        background: rgba(186,56,35,0.4) !important;
     }
         #request_demo input.invalid::-webkit-input-placeholder {
             color: #FFF;
@@ -326,7 +326,6 @@ form button {
         color: #ba3823;
         text-align: center;
         padding:10px 50px 0px 50px;
-        margin:0;
         width:auto;
     }
 #request_demo #success {

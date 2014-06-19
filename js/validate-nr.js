@@ -18,35 +18,35 @@
             }, true);
     }
                                                        
-        var validator = new FormValidator('request_demo', [{
-            name: 'name',   
-            rules: 'required'
-        }, {
-            name: 'email',
-            rules: 'required|valid_email'
-        }], 
-            function(errors, event) {
-                if (errors.length > 0) {
-                    for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
-                        document.getElementById(errors[i].name).className = 'invalid';
-                        document.getElementById(errors[i].name).value = '';
-                        document.getElementById(errors[i].name).placeholder = toTitleCase(errors[i].name) + ' is required';
-                        if (errors[i].rule == 'valid_email') {
-                            document.getElementById(errors[i].name).placeholder = 'Please enter a valid email address';
-                        }
+    var validator = new FormValidator('request_demo', [{
+        name: 'name',   
+        rules: 'required'
+    }, {
+        name: 'email',
+        rules: 'required|valid_email'
+    }], 
+        function(errors, event) {
+            if (errors.length > 0) {
+                for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
+                    document.getElementById(errors[i].name).className = 'invalid';
+                    document.getElementById(errors[i].name).value = '';
+                    document.getElementById(errors[i].name).placeholder = toTitleCase(errors[i].name) + ' is required';
+                    if (errors[i].rule == 'valid_email') {
+                        document.getElementById(errors[i].name).placeholder = 'Please enter a valid email address';
                     }
-                }
-                else {
-                    var queryString = '';
-                    for(var i = 0; i < allFields.length; i++)
-                    {
-                        queryString += allFields[i].name + '=' + allFields[i].value + '&';
-                    }
-                    Rughster.ajax('GET','sendmail.php?' + queryString, false, formSubmitted);
-                    document.getElementById('the_load').style.visibility = 'visible';
                 }
             }
-        );
+            else {
+                var queryString = '';
+                for(var i = 0; i < allFields.length; i++)
+                {
+                    queryString += allFields[i].name + '=' + allFields[i].value + '&';
+                }
+                Rughster.ajax('GET','sendmail.php?' + queryString, false, formSubmitted);
+                document.getElementById('the_load').style.visibility = 'visible';
+            }
+        }
+    );
     
     function formSubmitted(responseText, httpCode, error)
 	{
