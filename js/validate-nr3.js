@@ -34,7 +34,7 @@
         formError.style.visibility = 'hidden';
 		if(validateFields())
 		{	
-			$.post("sendmail.php",
+			$.get("sendmail.php",
                 {name: $("#name").val, email: $("#email").val, phone: $("#phone").val, organization: $("#organization").val, comments: $("#comments").val},
                 formSubmitted);
 			formLoading.style.visibility = 'visible';

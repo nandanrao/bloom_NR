@@ -139,7 +139,7 @@
 				To request a demonstration, or just speak with us about how Bloom can work for your hospice, please leave us your contact information and we’ll follow up with you soon.
 			</p>
 			<div id="the_form">
-			<form name="request_demo" method="post">
+			<form name="request_demo" action="sendmail.php" method="post">
 				<label for="name">Name</label>
 				<input type="text" name="name" id="name" placeholder="Name" class="required" data-required="required"  />
 				<label for="email">Email</label>
@@ -151,7 +151,7 @@
 				<input type="text" name="organization" id="organization" placeholder="Organization"/>
 				<label for="comments">Questions or Comments</label>
 				<textarea placeholder="Questions or Comments" id="comments" name="comments"></textarea>
-				<button type="button" id="submit_form">Submit</button>
+				<button type="submit" id="submit_form">Submit</button>
 			</form>
             </div>
             <div id="error">
