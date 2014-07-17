@@ -35,7 +35,7 @@
 		if(validateFields())
 		{	
 			$.get("sendmail.php",
-                {name: $("#name").val, email: $("#email").val, phone: $("#phone").val, organization: $("#organization").val, comments: $("#comments").val},
+                {name: $("#name").val(), email: $("#email").val(), phone: $("#phone").val(), organization: $("#organization").val(), comments: $("#comments").val()},
                 formSubmitted);
 			formLoading.style.visibility = 'visible';
 		}

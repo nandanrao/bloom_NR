@@ -1,13 +1,13 @@
 <?php
-// echo json_encode($_POST);
+// echo json_encode($_GET);
 $recipient = 'nandanmarkrao@gmail.com';
 $subject = 'Signup from Discover Bloom Website';
 $message = "You have received an inquiry from discoverbloom.com.<br/>";
-$message .= "Name: " . $_POST['name'] . "<br/>";
-$message .= "Email: " . $_POST['email'] . "<br/>";
-$message .= "Phone: " . $_POST['phone'] . "<br/>";
-$message .= "organization: " . $_POST['organization'] . "<br/>";
-$message .= "Comments: " . $_POST['comments'];
+$message .= "Name: " . $_GET['name'] . "<br/>";
+$message .= "Email: " . $_GET['email'] . "<br/>";
+$message .= "Phone: " . $_GET['phone'] . "<br/>";
+$message .= "organization: " . $_GET['organization'] . "<br/>";
+$message .= "Comments: " . $_GET['comments'];
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
