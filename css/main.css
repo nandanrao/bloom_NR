@@ -320,7 +320,7 @@ form button {
     visibility: hidden;
 }   
 #request_demo #error {
-    visibility: hidden;
+    display: none;
 }
     #request_demo #error p {
         color: #ba3823;

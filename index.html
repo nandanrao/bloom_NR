@@ -137,35 +137,36 @@
             <h2>Request a demo</h2>
             <p>
 				To request a demonstration, or just speak with us about how Bloom can work for your hospice, please leave us your contact information and we’ll follow up with you soon.
-			</p>
-			<div id="the_form">
-			<form name="request_demo" method="get">
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" placeholder="Name" class="required" data-required="required"  />
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" placeholder="Email" class="required" data-required="required" />
+            </p>
+            <div id="the_form">
+            <form name="request_demo" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" class="required" data-required="required"  />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" class="required" data-required="required" />
 
-				<label for="phone">Phone</label>
-				<input type="text" name="phone" id="phone" placeholder="Phone" />
-				<label for="organization">Organization</label>
-				<input type="text" name="organization" id="organization" placeholder="Organization"/>
-				<label for="comments">Questions or Comments</label>
-				<textarea placeholder="Questions or Comments" id="comments" name="comments"></textarea>
-				<button type="button" id="submit_form">Submit</button>
-			</form>
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" placeholder="Phone" />
+            <label for="organization">Organization</label>
+            <input type="text" name="organization" id="organization" placeholder="Organization"/>
+            <label for="comments">Questions or Comments</label>
+            <textarea placeholder="Questions or Comments" id="comments" name="comments"></textarea>
+            <button type="button" id="submit_form">Submit</button>
+            </form>
             </div>
             <div id="error">
-                    <p>
-                        There was an error processing your information request.
-                        <br/>Please try again or send us an email (below).
-                    </p>
-                </div>
-            <div id="the_load"></div>
-            <div id="success">
-                <h2>
-                    Thank You
-                </h2>
+                <p>
+                    There was an error processing your information request.
+                    <br/>Please try again or send us an email (below).
+                </p>
             </div>
+        </div>
+        
+        <div id="the_load"></div>
+        <div id="success">
+            <h2>
+                Thank You
+            </h2>
         </div>
     </article>
 	<footer>
@@ -190,8 +191,7 @@
             offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
         });
     </script>
-    
-    <script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/validate-nr3.js"></script>    
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/validate.js"></script>    
 </body>
 </html>
